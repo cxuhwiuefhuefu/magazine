@@ -1,9 +1,9 @@
 <!--components/nav/cmp.wxml-->
 
-<scroll-view    class="container" 
-                scroll-x="{{true}}" 
-                scroll-into-view="{{activeId}}"
-                scroll-with-animation="true">
+<scroll-view  class="container" 
+              scroll-x="{{true}}" 
+              scroll-into-view="{{activeId}}"
+              scroll-with-animation="true">
     <!-- <text class="type active">轻芒</text>
     <text class="type">兴趣</text>
     <text class="type">物质</text>
@@ -15,7 +15,7 @@
           wx:key="*this"
           class="type {{index === magazineIndex ? 'active' : ''}}"
           bind:tap="onTap"
-          data-index="{{index}}"
+          data-index="{{index}}"  
           id="{{'magazine' + index}}">{{item}}</text>
           
 </scroll-view>

@@ -4,8 +4,8 @@ Component({
    * 组件的属性列表
    */
   properties: {
-    tag: String,
-    tagId: Number
+    tag: String, // 内容
+    tagId: Number // id值
   },
 
   /**
@@ -16,6 +16,7 @@ Component({
   },
 
   methods: {
+    // 点击跳转不同类型页面
     onTap() {
       // const tagId = this.properties.tagId
       // wx.navigateTo({
@@ -25,6 +26,7 @@ Component({
       this._showError()
     },
 
+    // 显示消息提示框
     _showError() {
       wx.showToast({
         title: "当前小程序为测试版本，不能点击跳转哦~",

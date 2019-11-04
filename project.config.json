@@ -37,13 +37,19 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 0,
+			"current": 1,
 			"list": [
 				{
 					"id": 0,
 					"name": "搜索页面",
 					"pathName": "pages/search/search",
 					"query": "searchWord=读书"
+				},
+				{
+					"id": -1,
+					"name": "首页",
+					"pathName": "pages/index/index",
+					"scene": null
 				}
 			]
 		}

@@ -1,11 +1,9 @@
-/* components/nav/cmp.wxss */
-
 .container {
     box-sizing: border-box;
     width: 750rpx;
     padding: 30rpx;
     background-color: #fff;
-    white-space: nowrap;
+    white-space: nowrap; /* 文本不会换行 文本会在同一行上继续 直到遇到<br>标签为止 */
 }
 
 /* 750 + 60 */
@@ -19,3 +17,6 @@
 .active {
     color: #000;
 }
+
+
+/* 40 + 30+ 30 = 100 */

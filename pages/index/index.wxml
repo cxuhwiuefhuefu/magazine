@@ -1,8 +1,12 @@
+<!-- 导航条组件 -->
 <d-nav class="nav" catch:nav="onNav"/>
 
-<d-recommend recommend="{{recommend}}" magazine-id="{{magazineId}}" class="recommend"/>
+<!-- 推荐封面组件 -->
+<d-recommend recommend="{{recommend}}" 
+             magazine-id="{{magazineId}}" 
+             class="recommend"/>
 
-
+<!-- 推荐类型组件 -->
 <d-tagList mark-list="{{markList}}">
     <!-- <view slot="before">+</view> -->
     <d-add slot="before" class="add" wx:if="{{magazineId == 0}}"/>

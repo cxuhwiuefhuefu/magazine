@@ -2,14 +2,14 @@ const strArr = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'g', 'k', 'l', 'm',
 
 
 const random = function (n) {
-    let str = ''
+    let str = '';
 
     for(let i = 0; i < n; i ++) {
-        let index = Math.floor( Math.random() * 52 )
-        str += strArr[index]
+        let index = Math.floor( Math.random() * 52 );
+        str += strArr[index];
     }
 
-    return str
+    return str;
 }
 
-export {random}
+export {random};

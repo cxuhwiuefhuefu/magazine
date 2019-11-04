@@ -1,9 +1,7 @@
-/* components/recommend/cmp.wxss */
-
 .container {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; /* 定义项目在交叉抽上如何对齐 */
     background-color: #fff;
 }
 
@@ -11,18 +9,19 @@
     position: relative;
     font-size: 52rpx;
     padding-bottom: 24rpx;
-    letter-spacing: 10rpx;
+    letter-spacing: 10rpx; /* 增加或减少在字符间的字符间距 */
 }
 
 .big-title::after {
     position: absolute;
     left: 50%;
-    bottom: 0;
     margin-left: -57rpx;
+    bottom: 0;
+    display: block;
+    content: '';
     width: 114rpx;
     height: 4rpx;
     background-color: #999;
-    content: '';
 }
 
 .title {
@@ -32,7 +31,8 @@
     font-size: 28rpx;
 }
 
-.image, .skeleton {
+.image, 
+.skeleton {
     margin-top: 50rpx;
     margin-bottom: 20rpx;
     width: 700rpx;
@@ -41,9 +41,11 @@
 
 .skeleton {
     position: relative;
-    background-color: rgba(0, 0, 0, .3)
+    background-color: rgba(0, 0, 0, .3);
 }
 
+
+/* 推荐页面骨架图占位图标 */
 .loader {
     position: absolute;
     top: 50%;
@@ -57,7 +59,6 @@
     border-radius: 50%;
     animation: 1s loader linear infinite;
 }
-
 @keyframes loader {
     0% {
         transform: rotate(0deg);
