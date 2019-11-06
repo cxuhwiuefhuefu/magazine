@@ -8,8 +8,8 @@ Component({
   behaviors: [myBeh],
 
   properties: {
-    mainTitle: String,
-    subHead: String
+    // mainTitle: String,
+    // subHead: String
   },
 
   /**

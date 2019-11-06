@@ -1,5 +1,5 @@
 class Request {
-    baseUrl = 'http://api.duyiedu.com/zazhi/magazine'
+    baseUrl = 'https://api.duyiedu.com/zazhi/magazine'
 
     getData({url, method='GET', data={}}) {
         return new Promise( (resolve, reject) => {

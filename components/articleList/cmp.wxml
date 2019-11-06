@@ -3,8 +3,7 @@
     <d-article  class="article"
                 wx:for="{{articleList}}"
                 wx:key="{{artId}}"
-                article-detail="{{item}}"
-    />
+                article-detail="{{item}}"/>
 
     <d-loading hidden="{{!loading}}" class="loading"/>
 

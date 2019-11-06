@@ -1,5 +1,3 @@
-/* components/add/cmp.wxss */
-
 .container {
     display: inline-block;
     border: 1px solid #000;

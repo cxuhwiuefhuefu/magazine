@@ -10,7 +10,7 @@ Page({
     articleList: [], // 文章列表数据
     markList: [], // 推荐类型数据
     recommend: {}, // 推荐封面数据
-    getMore: '',
+    getMore: '', // 随机值 
     magazineId: 0, // 当前哪个值
     loading: true
   },

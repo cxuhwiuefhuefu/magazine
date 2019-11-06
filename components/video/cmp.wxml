@@ -1,13 +1,14 @@
-
+<!-- 视频组件 -->
 
 <view class="container">
-    <view >
-        <video  id="{{videoId}}"
-                hidden="{{showPoster}}"
-                class="video"
-                src="{{src}}"
-                bindended="onVideoEnd" />
+    <view>
+        <video id="{{videoId}}"
+               hidden="{{showPoster}}"
+               class="video"
+               src="{{src}}"
+               bindended="onVideoEnd" />
 
+        <!-- 封面 -->
         <view hidden="{{!showPoster}}" class="poster-container">
             <image  class="poster"
                     src="{{poster}}" />
@@ -23,10 +24,26 @@
         <text >{{mainTitle}}</text>
     </view>
 
-    <view   catch:tap="onMaskTap"
-            class="mask" hidden="{{showPoster}}"></view>
+    <view catch:tap="onMaskTap"
+          class="mask" 
+          hidden="{{showPoster}}"></view>
 </view>
 
 
 <!-- showPoster -->
 
+<!-- 
+
+  video是原生组件 原生组件的层级是最大的 像view img text这样的组件
+      无论你给他的z-index设置为多少 在真机上它都会显示在video组件的下方
+      只有用cover-view cover-img才能让我们的图片或者文字出现在我们视频的上方
+      在我们手机上看这个视频的时候 这个视频的动图它是不动 展示因为cover-img它支持gif格式的图片
+      怎么样？
+
+  在打开视频的时候有朦胧层出现    
+  视频和图片大小自适应
+
+  图片和视频切换显示和隐藏 
+
+
+ -->

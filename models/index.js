@@ -1,7 +1,7 @@
 import {Request} from "../utils/request.js"
 
 class IndexModel extends Request{
-    // 
+    // 获取文章详情数据
     getArticleList (magazineId=0, start=0) {
         return this.getData({
             url: `/getIndexArticleList/${magazineId}/${start}.json`

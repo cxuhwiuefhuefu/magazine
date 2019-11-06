@@ -13,12 +13,13 @@
     <view slot="after" class="to-catalog" catch:tap="onCatalog" wx:if="{{magazineId === 0}}">•••</view>
 </d-tagList>
 
-
+<!-- 内容详情组件 -->
 <d-articleList  id="test"
                 article-list="{{articleList}}"
                 more="{{getMore}}"
                 magazineId="{{magazineId}}"/>
 
+<!-- 加载图标 -->
 <view class="loading-container" wx:if="{{loading}}">
 	<d-loading class="loading"/>
 </view>

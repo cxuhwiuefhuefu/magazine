@@ -5,7 +5,7 @@ Component({
    * 组件的属性列表
    */
   properties: {
-    like:  Boolean
+    like: Boolean
   },
 
   /**
@@ -19,14 +19,15 @@ Component({
    * 组件的方法列表
    */
   methods: {
+    // 点击收藏按钮
     onLike() {
-      const like = !this.data.like
+      const like = !this.data.like;
 
       this.setData({
         like
       })
 
-
+      // 触发父组件的事件
       this.triggerEvent('like', {
         like
       })

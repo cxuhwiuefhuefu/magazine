@@ -1,5 +1,4 @@
-
-
+<!-- 九宫图组件 -->
 <view class="container">
     <view class="img-container">
         <image class="image"
@@ -13,6 +12,6 @@
         <text class="img-num" wx:if="{{imgArr.length > 9}}">{{imgArr.length}}</text>
     </view>
     <view class="text-container">
-        <text >{{mainTitle}}实力商家来讲实力肯定就是老大是</text>
+        <text >{{mainTitle}}</text>
     </view>
 </view>

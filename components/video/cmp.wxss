@@ -1,5 +1,3 @@
-/* components/video/cmp.wxss */
-
 .container {
     width: 700rpx;
 }
@@ -27,6 +25,7 @@
     left: 50%;
     margin-top: -50rpx;
     margin-left: -50rpx;
+    
     display: flex;
     flex-direction: column;
     align-items: center;

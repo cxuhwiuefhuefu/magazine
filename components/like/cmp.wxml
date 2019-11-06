@@ -1,4 +1,4 @@
-<!-- like组件 -->
+<!-- 收藏组件 -->
 
 <view class="container">
     <image class="image" src="image/circle.png" catch:tap="onLike" hidden="{{like}}"/>

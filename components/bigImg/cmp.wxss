@@ -1,6 +1,5 @@
-
 .image {
-    width: 700rpx;
+  width: 700rpx;
 }
 
 .text {

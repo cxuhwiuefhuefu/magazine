@@ -21,8 +21,9 @@ Component({
    * 组件的方法列表
    */
   methods: {
+    // ??????
     onGetUserInfo(e) {
-      // console.log(e)
+      console.log(e);
       this.triggerEvent('getuserinfo', e.detail, {})
     }
   }
